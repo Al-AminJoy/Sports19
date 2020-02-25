@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/LiveScoreDrawerId"
+    tools:context=".Activity.LiveScoreActivity">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/web_view_content"
+        />
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemTextColor="@color/whiteColor"
+        android:background="@color/whiteColor"
+        app:itemIconTint="@color/darkColor"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/basicColor"
+                >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/splash_icon"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Sports 19"
+                    android:textColor="@color/whiteColor"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    />
+
+
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvNavLiveScoreLiveTvId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Live Tv"
+                        android:textSize="20sp"
+                        android:textColor="@color/blackColor"
+                        android:layout_marginLeft="10dp"
+
+                        android:drawableLeft="@drawable/ic_arrow"
+                        android:padding="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/tvNavLiveScore_LiveScoreId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Live Score"
+                        android:textSize="20sp"
+                        android:textColor="@color/blackColor"
+                        android:layout_marginLeft="10dp"
+
+                        android:drawableLeft="@drawable/ic_arrow"
+                        android:padding="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/tvNavLiveScorePointTableId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Point Table"
+                        android:textSize="20sp"
+                        android:textColor="@color/blackColor"
+                        android:layout_marginLeft="10dp"
+
+                        android:drawableLeft="@drawable/ic_arrow"
+                        android:padding="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/tvNavLiveScoreCricNewsId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cricket News"
+                        android:textSize="20sp"
+                        android:textColor="@color/blackColor"
+                        android:layout_marginLeft="10dp"
+
+                        android:drawableLeft="@drawable/ic_arrow"
+                        android:padding="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/tvNavLiveScoreScheduleId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Schedules"
+                        android:textSize="20sp"
+                        android:textColor="@color/blackColor"
+                        android:layout_marginLeft="10dp"
+
+                        android:drawableLeft="@drawable/ic_arrow"
+                        android:padding="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/tvNavLiveScoreRankingId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rankings"
+                        android:textSize="20sp"
+                        android:textColor="@color/blackColor"
+                        android:layout_marginLeft="10dp"
+
+                        android:drawableLeft="@drawable/ic_arrow"
+                        android:padding="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvNavLiveScoreGalleryId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gallery"
+                        android:textSize="20sp"
+                        android:textColor="@color/blackColor"
+                        android:layout_marginLeft="10dp"
+
+                        android:drawableLeft="@drawable/ic_arrow"
+                        android:padding="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvNavLiveScoreVideoId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cricket Video"
+                        android:textSize="20sp"
+                        android:textColor="@color/blackColor"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/ic_arrow"
+                        android:padding="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvNavLiveScoreRateUsId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rate Us"
+                        android:textSize="20sp"
+                        android:textColor="@color/blackColor"
+                        android:layout_marginLeft="10dp"
+
+                        android:drawableLeft="@drawable/ic_arrow"
+                        android:padding="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/tvNavLiveScoreFeedBackId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Feedback"
+                        android:textSize="20sp"
+                        android:textColor="@color/blackColor"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/ic_arrow"
+                        android:padding="10dp"
+                        android:layout_marginBottom="10dp"
+                        />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+    <include
+        android:id="@+id/tbvideoid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_content"
+        />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tlVideoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@color/whiteColor"
+        app:tabTextColor="@color/blackColor"
+        app:tabBackground="@drawable/tab_color_selector"
+        app:tabIndicator="@color/whiteColor"
+
+        >
+        <android.support.design.widget.TabItem
+            android:id="@+id/tbiVideoHighlightsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heighlights"
+
+            />
+        <android.support.design.widget.TabItem
+            android:id="@+id/tbiVideoUnofficialVideoId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unofficial Video"
+
+            />
+
+
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpVideoId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
